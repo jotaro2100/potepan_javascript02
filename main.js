@@ -24,6 +24,7 @@ function clickButton(button) {
       if (result.innerHTML == "") {
         return;
       }
+      getLastSymbol();
       result.innerHTML = eval(result.innerHTML);
       break;
     case "+":
